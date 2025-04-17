@@ -54,11 +54,19 @@ async function removeTask(id: string) {
   }
 }
 
-function checkDone(id: String){
+async function checkDone(id: String){
   const task = tasksList.value.find((t)=> t.id === id);
 
   if(task){
     task.done = !task.done;
+
+    try{
+      await axios.put(`tasks/${id}`, {
+        done: task.done
+      });
+    }catch(error){
+      console.error("There was an error updating the task:", error);
+    }
   }
 }
 

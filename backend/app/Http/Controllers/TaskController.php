@@ -27,6 +27,25 @@ class TaskController extends Controller
         return response()->json($task, 201);
     }
 
+    // UPDATE /api/tasks/{id}
+    public function update(Request $request, $id)
+    {
+        $task = Task::find($id);
+
+        if (!$task) {
+            return response()->json(['error' => 'Task not found'], 404);
+        }
+
+        $request->validate([
+            'done' => 'required|boolean',
+        ]);
+
+        $task->done = $request->done;
+        $task->save();
+
+        return response()->json($task);
+    }
+
     // DELETE /api/tasks/{id}
     public function destroy($id)
     {
