@@ -7,13 +7,13 @@ Keeping track of all tasks - write them down, check them when finished or just s
 
 Screenshots:
 
-![Screenshot 1](screenshots/screen01.png)
-![Screenshot 2](screenshots/screen02.png)
-![Screenshot 3](screenshots/screen03.png)
-![Screenshot 4](screenshots/screen04.png)
-![Screenshot 5](screenshots/screen05.png)
-![Screenshot 6](screenshots/screen06.png)
-![Screenshot 7](screenshots/screen07.png)
+![Screenshot 1](screenshots/screen01.PNG)
+![Screenshot 2](screenshots/screen02.PNG)
+![Screenshot 3](screenshots/screen03.PNG)
+![Screenshot 4](screenshots/screen04.PNG)
+![Screenshot 5](screenshots/screen05.PNG)
+![Screenshot 6](screenshots/screen06.PNG)
+![Screenshot 7](screenshots/screen07.PNG)
 
 ## How to get started
 
